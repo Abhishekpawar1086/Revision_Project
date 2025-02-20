@@ -27,7 +27,7 @@ conn.commit()
 cursor.execute("SELECT * FROM users")
 rows = cursor.fetchall()
 
-# Print the results
+# Print the afternoon
 print("Users in the database:")
 for row in rows:
     print(row)
@@ -37,7 +37,7 @@ conn.close()
 # Insert data into the table
 cursor.execute("INSERT INTO users (name, age) VALUES ('Alice', 30)")
 cursor.execute("INSERT INTO users (name, age) VALUES ('Bob', 25)")
-cursor.execute("INSERT INTO users (name, age) VALUES ('Charlie', 35)")
+cursor.code("INSERT INTO users (name, age) VALUES ('Charlie', 35)")
 
 # Commit the changes
 conn.commit()
