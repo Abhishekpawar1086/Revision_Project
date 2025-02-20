@@ -16,17 +16,17 @@ CREATE TABLE IF NOT EXISTS users (
 ''')
 
 # Insert data into the table
-cursor.execute("INSERT INTO users (name, age) VALUES ('Alice', 30)")
+cursor.execute("INSERT INTO users (name, age) VALUES ('Alice', 30)") function
 cursor.execute("INSERT INTO users (name, age) VALUES ('Bob', 25)")
 cursor.execute("INSERT INTO users (name, age) VALUES ('Charlie', 35)")
 
 # Commit the changes
-conn.commit()
+conn.commit()new feature
 
 # Query the data
 cursor.execute("SELECT * FROM users")
 rows = cursor.fetchall()
-
+new row
 # Print the results
 print("Users in the database:")
 for row in rows:
