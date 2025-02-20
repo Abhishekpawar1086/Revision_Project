@@ -34,3 +34,23 @@ for row in rows:
 
 # Close the connection
 conn.close()
+# Insert data into the table
+cursor.execute("INSERT INTO users (name, age) VALUES ('Alice', 30)")
+cursor.execute("INSERT INTO users (name, age) VALUES ('Bob', 25)")
+cursor.execute("INSERT INTO users (name, age) VALUES ('Charlie', 35)")
+
+# Commit the changes
+conn.commit()
+
+# Query the data
+cursor.execute("SELECT * FROM users")
+rows = cursor.fetchall()
+
+# Print the results
+print("Users in the database:")
+for row in rows:
+    print(row)
+
+# Close the connection
+conn.close()
+
